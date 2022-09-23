@@ -1,7 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~prismjs/plugins/toolbar/prism-toolbar.css";
-@import "~prismjs/themes/prism-okaidia";
-
 $font-size: 25px;
 
 html, body {
@@ -31,7 +28,7 @@ button, input {
     height: $font-size * 1.5;
 }
 
-button, app-range-input {
+button, app-range-input, p {
     margin: 8px;
 }
 
