@@ -3,7 +3,7 @@ $color: rgba(136,126,99,.87);
 @keyframes highlight {
     from {outline: 10px solid lightskyblue;}
     to {outline: 10px solid transparent;}
-  }
+}
 
 :host {
     position: relative;

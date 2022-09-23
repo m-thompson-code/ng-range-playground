@@ -21,3 +21,12 @@
         Moocow {{ i }}
     </anime>
 </div> -->
+
+<!-- #region Secrets -->
+<button class="woo" (click)="woo.woo()">Woo!</button>
+<button class="gifs" (click)="gifs.push()">Gifs!</button>
+<div #divContainer class="party-time">
+    <app-woo #woo [divContainer]="divContainer"></app-woo>
+</div>
+<app-gifs #gifs></app-gifs>
+<!-- #endregion -->

@@ -7,6 +7,8 @@ import { AnimeComponent } from './components/anime/anime.component';
 import { RangeInputComponent } from './components/range-input/range-input.component';
 import { RangeDirective } from './directives/range/range.directive';
 import { TempComponent } from './components/temp/temp.component';
+import { WooComponent } from './components/woo/woo.component';
+import { GifsComponent } from './components/gifs/gifs.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +17,8 @@ import { TempComponent } from './components/temp/temp.component';
     AnimeComponent,
     RangeDirective,
     TempComponent,
+    WooComponent,
+    GifsComponent,
   ],
   imports: [
     BrowserModule,

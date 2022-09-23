@@ -3,8 +3,24 @@
     flex-wrap: wrap;
 }
 
-img {
-    height: 240px;
-    width: 240px;
-    background: red;
+.party-time {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    pointer-events: none;
+}
+
+.woo,.gifs {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 0;
+    height: 64px;
+    width: 64px;
+}
+.gifs {
+    top: unset;
+    bottom: 0;
 }
