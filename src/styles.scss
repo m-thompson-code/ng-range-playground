@@ -29,6 +29,7 @@ button, input {
 }
 
 button, app-range-input, p {
+    min-width: $font-size * 1.5;
     margin: 8px;
 }
 
