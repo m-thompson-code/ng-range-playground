@@ -1,1 +1,54 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~prismjs/plugins/toolbar/prism-toolbar.css";
+@import "~prismjs/themes/prism-okaidia";
+
+$font-size: 25px;
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    
+    font-family: Roboto, 'Helvetica Neue', sans-serif;
+    font-size: $font-size;
+    line-height: 1.65;
+}
+
+h1 {
+    margin: 0;
+}
+
+img {
+    display: block;
+}
+
+button:not(:disabled) {
+    cursor: pointer;
+}
+
+button, input {
+    font-size: $font-size;
+    height: $font-size * 1.5;
+}
+
+button, app-range-input {
+    margin: 8px;
+}
+
+@font-face {
+    font-family: 'Hey Jack Free Version';
+    src: url('assets/HeyJackFreeVersion.woff2') format('woff2'),
+        url('assets/HeyJackFreeVersion.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CookieMonster';
+    src: url('assets/CookieMonster.woff2') format('woff2'),
+        url('assets/CookieMonster.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
