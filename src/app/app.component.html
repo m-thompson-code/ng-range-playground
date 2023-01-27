@@ -1,11 +1,25 @@
 <H1>Hello World</H1>
 
-<button class="" (click)="max = max + 1">+</button>
-<button (click)="max = max - 1">-</button>
-Max: {{ max }}
+<app-range-input #range></app-range-input>
 
-<p>0</p>
-<p>1</p>
-<p>2</p>
-<p>3</p>
-<p>4</p>
+
+<div class="grid">
+    <anime
+        *ngRange="range.max; min:range.min; let i = index; let first = first; let last = last; let odd = odd; let even = even"
+    >
+        Moocow {{ i }}
+        {{ odd ? ' odd ' : '' }}
+        {{ even ? ' even ' : '' }}
+        {{ first ? ' first ' : '' }}
+        {{ last ? ' last ' : '' }}
+    </anime>
+</div>
+
+<!-- #region Secrets -->
+<button class="woo" (click)="woo.woo()">Woo!</button>
+<button class="gifs" (click)="gifs.push()">Gifs!</button>
+<div #divContainer class="party-time">
+    <app-woo #woo [divContainer]="divContainer"></app-woo>
+</div>
+<app-gifs #gifs></app-gifs>
+<!-- #endregion -->

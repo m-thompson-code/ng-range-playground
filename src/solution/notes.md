@@ -18,7 +18,7 @@ Max: {{ max }}
 <p *ngRange="max">Moocow</p>
 ```
 
-### Naive Solution to *ngFor part 1
+### Naive Solution to *ngRange part 1
 
 ```typescript
 export class RangeDirective {
